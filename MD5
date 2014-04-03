@@ -1,0 +1,10 @@
+3dfdc1bdb5935305426426c89bbf4b96 *DESCRIPTION
+da85c6a40fa06705add00c457f0a8ab0 *LICENSE
+9582d4539255b352a83edc37a21c3574 *NAMESPACE
+5325fc303693e837bd6f4ab46c7ad69b *NEWS
+3e74aa6293de1ee4211b3cc281c5ef04 *R/find_python_cmd.r
+599713be01af712133b19dcab8ea0ee6 *man/can_find_python_cmd.Rd
+acadec53a9051899dd427a9cb2a10358 *man/find_python_cmd.Rd
+c483a9bb9944ecf0458fc401d55b47a3 *man/is_python_sufficient.Rd
+e9f668748d07cefc493a1a111d403784 *tests/run-all.R
+e8817a2d86811bfb73e559762045952a *tests/testthat/test-findpython.r
