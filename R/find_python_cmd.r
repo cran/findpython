@@ -85,14 +85,22 @@ find_python_cmd <- function(minimum_version=NULL, maximum_version=NULL,
     python_cmds <- c(getOption("python_cmd", ""), "python", Sys.getenv("PYTHON", ""), 
                     sprintf("python%.1f", c(seq(4.9, 2.0, by=-0.1))), 
                     "python4", "python3", "python2", "pypy",
-                    Sys.getenv("PYTHON3", ""), Sys.getenv("PYTHON2", ""), 
-                    sprintf("C:/Python%s/python", c(40:20)))
+                    Sys.getenv("PYTHON4", ""), Sys.getenv("PYTHON3", ""), 
+                    Sys.getenv("PYTHON2", ""), sprintf("C:/Python%s/python", c(49:20)))
     python_cmds <- unique(python_cmds)
     python_cmds <- Sys.which(python_cmds)
     python_cmds <- python_cmds[which(python_cmds != "")]
     for(cmd in python_cmds) {
         if(is_python_sufficient(cmd, minimum_version, maximum_version, required_modules)) { 
             return(cmd)
+        }
+    }
+    if(exists('py_discover_config', where=asNamespace('reticulate'), mode='function')) { # Fall back on reticulate if can't find a suitable command
+        python_cmds <- reticulate::py_discover_config()$python_versions
+        for(cmd in python_cmds) {
+            if(is_python_sufficient(cmd, minimum_version, maximum_version, required_modules)) { 
+                return(cmd)
+            }
         }
     }
     if(is.null(error_message)) { error_message <- paste("Couldn't find a sufficient Python binary.",
@@ -106,7 +114,7 @@ find_python_cmd <- function(minimum_version=NULL, maximum_version=NULL,
                                                          paste(required_modules, collapse=', ')))}
     stop(error_message)
 }
-#' Determins whether or not it can find a suitable python cmd 
+#' Determines whether or not it can find a suitable python cmd 
 #'
 #' \code{can_find_python_cmd} runs \code{find_python_cmd} and returns whether it could find a suitable python cmd.  If it was successful its output also saves the found command as an attribute. 
 #'
