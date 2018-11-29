@@ -1,10 +1,11 @@
-835dfb90b80390a3f2cdd7770b1faeea *DESCRIPTION
+228cf875339529914c870978cb563ac1 *DESCRIPTION
 1458f19b0b919ce5085a5d9ca54a8ca1 *LICENSE
 2ac170dcd095e1526fdf4d56b295cc9d *NAMESPACE
-ae8b5c2737db9df1c5fc43d00b5740ba *NEWS
-10e31622769369f4a1be572da182a68e *R/find_python_cmd.r
+10277cdf4a93116cc47929005a490ab2 *NEWS.md
+55867d64b83a1e8d5513c7451820a313 *R/find_python_cmd.r
+d3a652c6a6efd0ee44c3534cea77041c *README.md
 8b486e2224bb96d0ef2d459eda907f0e *man/can_find_python_cmd.Rd
 b3212d336785d7fa96ece8c3177b3c93 *man/find_python_cmd.Rd
-99ec72b71eaca48c26b74f1a5dd5d67e *man/is_python_sufficient.Rd
+50762461df6f992e327d0502c6a86915 *man/is_python_sufficient.Rd
 e9f668748d07cefc493a1a111d403784 *tests/run-all.R
 0f9daac37a950e2db9636562ecc85deb *tests/testthat/test-findpython.r
