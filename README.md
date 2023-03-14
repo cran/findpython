@@ -3,15 +3,11 @@ findpython
 
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version/findpython)](https://cran.r-project.org/package=findpython)
 
-[![Build Status](https://travis-ci.org/trevorld/findpython.png?branch=master)](https://travis-ci.org/trevorld/findpython)
+[![R-CMD-check](https://github.com/trevorld/findpython/workflows/R-CMD-check/badge.svg)](https://github.com/trevorld/findpython/actions)
 
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/trevorld/findpython?branch=master&svg=true)](https://ci.appveyor.com/project/trevorld/findpython)
-
-[![Coverage Status](https://img.shields.io/codecov/c/github/trevorld/findpython.svg)](https://codecov.io/github/trevorld/findpython?branch=master)
+[![Coverage Status](https://codecov.io/github/trevorld/findpython/branch/master/graph/badge.svg)](https://app.codecov.io/github/trevorld/findpython?branch=master)
 
 [![RStudio CRAN mirror downloads](https://cranlogs.r-pkg.org/badges/findpython)](https://cran.r-project.org/package=findpython)
-
-[![Project Status: Inactive -- The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 
 `findpython` is an R package that finds acceptable Python binaries for
 your program. Since there are often multiple python binaries installed
